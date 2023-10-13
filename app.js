@@ -162,7 +162,7 @@ function tick(){
     //if (snake.x == goldenApple.x && snake.y == goldenApple.y){
      //   size+=3
        // spawnGoldenApple()
-    }
+   // }
 
     if(timer != null){
         clearInterval(timer)
