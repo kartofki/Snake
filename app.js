@@ -200,15 +200,15 @@ function spawnApple(){
 
 //golden apple spawn
 
-function spawnGoldenApple(){
-    goldenApple.x = Math.floor(Math.random() * 20)
-    goldenApple.y = Math.floor(Math.random() * 20)
+//function spawnGoldenApple(){
+   // goldenApple.x = Math.floor(Math.random() * 20)
+  //  goldenApple.y = Math.floor(Math.random() * 20)
 
-    for(let square of tail){
-        if(square.x == goldenApple.x && square.y == goldenApple.y){
-            spawnGoldenApple()
-        }
-    }
+    //for(let square of tail){
+     // if(square.x == goldenApple.x && square.y == goldenApple.y){
+       //     spawnGoldenApple()
+    //    }
+//    }
 
     setTimeout(() => {
         
