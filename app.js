@@ -25,10 +25,10 @@ const apple = {
     y: 5
 }
 
-const goldenApple = {
-    x: 7,
-    y: 7
-}
+//const goldenApple = {
+ //   x: 7,
+ //   y: 7
+//}
 
 //directions
 const speed = {
@@ -159,9 +159,9 @@ function tick(){
         spawnApple()
     }
 
-    if (snake.x == goldenApple.x && snake.y == goldenApple.y){
-        size+=3
-        spawnGoldenApple()
+    //if (snake.x == goldenApple.x && snake.y == goldenApple.y){
+     //   size+=3
+       // spawnGoldenApple()
     }
 
     if(timer != null){
@@ -210,18 +210,18 @@ function spawnApple(){
     //    }
 //    }
 
-    setTimeout(() => {
+    //setTimeout(() => {
         
-        ctx.clearRect(goldenApple.x * 20, goldenApple.y * 20, 20, 20);
+    //    ctx.clearRect(goldenApple.x * 20, goldenApple.y * 20, 20, 20);
 
         
-        const randomInterval = Math.floor(Math.random() * 1000) + 1000; // Random interval 
-        setTimeout(spawnGoldenApple, randomInterval);
-    }, 5000); // 7000 milliseconds (7 seconds)
-}
+     //   const randomInterval = Math.floor(Math.random() * 1000) + 1000; // Random interval 
+     //   setTimeout(spawnGoldenApple, randomInterval);
+  //  }, 5000); // 7000 milliseconds (7 seconds)
+//}//
 
-const initialSpawnDelay = Math.floor(Math.random() * 3000) + 1000; 
-        setTimeout(spawnGoldenApple, initialSpawnDelay);
+//const initialSpawnDelay = Math.floor(Math.random() * 3000) + 1000; 
+      //  setTimeout(spawnGoldenApple, initialSpawnDelay);
 
 function drawScene() {
    
