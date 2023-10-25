@@ -25,10 +25,10 @@ const apple = {
     y: 5
 }
 
-//const goldenApple = {
- //   x: 7,
- //   y: 7
-//}
+const goldenApple = {
+   x: 7,
+   y: 7
+}
 
 //directions
 const speed = {
