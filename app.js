@@ -163,37 +163,37 @@ function tick(){
         size+=3
         spawnGoldenApple()
         clearInterval(timer)
-        timer = setInterval(main, 200)
+        
     }
 
-    if(timer != null){
-        clearInterval(timer)
-    }
-   if(size < 7){
-       clearInterval(timer)
+  //  if(timer != null){
+       // clearInterval(timer)
+    //}
+  // if(size < 7){
+   //    clearInterval(timer)
         
-       timer = setInterval(main, 250)
-    }
-    else if(size >= 7 || size < 15){
-        clearInterval(timer)
+   //    timer = setInterval(main, 250)
+   // }
+   // else if(size >= 7 || size < 15){
+   //     clearInterval(timer)
        
-        timer = setInterval(main, 200)
-   }
-   else if(size >= 15 || size < 25){
-       clearInterval(timer)
+     //   timer = setInterval(main, 200)
+  // }
+  // else if(size >= 15 || size < 25){
+     //  clearInterval(timer)
        
-    timer = setInterval(main, 150)
-}
-else if(size >= 25 || size < 35){
-    clearInterval(timer)
+   // timer = setInterval(main, 150)
+//}
+//else if(size >= 25 || size < 35){
+   // clearInterval(timer)
        
-    timer = setInterval(main, 125)
-}
-else if(size >= 35){
-    clearInterval(timer)
+    //timer = setInterval(main, 125)
+//}
+//else if(size >= 35){
+  //  clearInterval(timer)
         
-    timer = setInterval(main, 80)
-}
+  //  timer = setInterval(main, 80)
+//}
 
 
 }
