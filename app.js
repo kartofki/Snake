@@ -162,7 +162,7 @@ function tick(){
     if (snake.x == goldenApple.x && snake.y == goldenApple.y){
         size+=3
         spawnGoldenApple()
-        clearInteval(timer)
+        clearInterval(timer)
         timer = setInterval(main, 200)
     }
 
@@ -170,27 +170,27 @@ function tick(){
         clearInterval(timer)
     }
    if(size < 7){
-       clearInteval(timer)
+       clearInterval(timer)
         
        timer = setInterval(main, 250)
     }
     else if(size >= 7 || size < 15){
-        clearInteval(timer)
+        clearInterval(timer)
        
         timer = setInterval(main, 200)
    }
    else if(size >= 15 || size < 25){
-       clearInteval(timer)
+       clearInterval(timer)
        
     timer = setInterval(main, 150)
 }
 else if(size >= 25 || size < 35){
-    clearInteval(timer)
+    clearInterval(timer)
        
     timer = setInterval(main, 125)
 }
 else if(size >= 35){
-    clearInteval(timer)
+    clearInterval(timer)
         
     timer = setInterval(main, 80)
 }
