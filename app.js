@@ -159,10 +159,10 @@ function tick(){
         spawnApple()
     }
 
-    //if (snake.x == goldenApple.x && snake.y == goldenApple.y){
-     //   size+=3
-       // spawnGoldenApple()
-   // }
+    if (snake.x == goldenApple.x && snake.y == goldenApple.y){
+        size+=3
+        spawnGoldenApple()
+    }
 
     if(timer != null){
         clearInterval(timer)
@@ -200,25 +200,25 @@ function spawnApple(){
 
 //golden apple spawn
 
-//function spawnGoldenApple(){
-   // goldenApple.x = Math.floor(Math.random() * 20)
-  //  goldenApple.y = Math.floor(Math.random() * 20)
+function spawnGoldenApple(){
+    goldenApple.x = Math.floor(Math.random() * 20)
+   goldenApple.y = Math.floor(Math.random() * 20)
 
-    //for(let square of tail){
-     // if(square.x == goldenApple.x && square.y == goldenApple.y){
-       //     spawnGoldenApple()
-    //    }
-//    }
+    for(let square of tail){
+      if(square.x == goldenApple.x && square.y == goldenApple.y){
+            spawnGoldenApple()
+        }
+    }
 
-    //setTimeout(() => {
+    setTimeout(() => {
         
-    //    ctx.clearRect(goldenApple.x * 20, goldenApple.y * 20, 20, 20);
+    ctx.clearRect(goldenApple.x * 20, goldenApple.y * 20, 20, 20);
 
         
-     //   const randomInterval = Math.floor(Math.random() * 1000) + 1000; // Random interval 
-     //   setTimeout(spawnGoldenApple, randomInterval);
-  //  }, 5000); // 7000 milliseconds (7 seconds)
-//}//
+        const randomInterval = Math.floor(Math.random() * 1000) + 1000; // Random interval 
+        setTimeout(spawnGoldenApple, randomInterval);
+    }, 5000); // 7000 milliseconds (7 seconds)
+}
 
 //const initialSpawnDelay = Math.floor(Math.random() * 3000) + 1000; 
       //  setTimeout(spawnGoldenApple, initialSpawnDelay);
